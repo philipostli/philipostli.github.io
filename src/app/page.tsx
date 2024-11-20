@@ -3,6 +3,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <header className="flex flex-col gap-4 mt-20">
+        <h1 className="text-4xl font-bold tracking-tight text-center sm:text-6xl font-[family-name:var(--font-geist-sans)]">
+          Welcome to{" "}
+          <a
+            href="https://github.com/philipostli/"
+            className="text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-500"
+          >
+            my GitHub
+          </a>
+        </h1>
+        <div className="flex justify-center">
+          <div id="light-l" className="w-40 h-40" style={{ background: "conic-gradient(from 90deg, #9333ea, transparent, transparent)" }}></div>
+          <div id="light-r" className="w-40 h-40" style={{ background: "conic-gradient(from 270deg, transparent, transparent, #9333ea)" }}></div>
+        </div>
+
+      </header> 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
